@@ -1,0 +1,4 @@
+#Fri May 02 14:07:06 EAT 2025
+base.0=/joxe/xampp/htdocs/remote.app/scontrol/build/app/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
