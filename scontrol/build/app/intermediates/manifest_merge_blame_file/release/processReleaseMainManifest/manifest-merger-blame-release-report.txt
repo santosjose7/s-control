@@ -1,0 +1,200 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.phone_pc_controller_fixed"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:2:5-67
+11-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:2:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:3:5-79
+12-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:3:22-77
+13    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+13-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:4:5-81
+13-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:4:22-79
+14    <!--
+15         Required to query activities that can process text, see:
+16         https://developer.android.com/training/package-visibility and
+17         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+18
+19         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+20    -->
+21    <queries>
+21-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:43:5-48:15
+22        <intent>
+22-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:44:9-47:18
+23            <action android:name="android.intent.action.PROCESS_TEXT" />
+23-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:45:13-72
+23-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:45:21-70
+24
+25            <data android:mimeType="text/plain" />
+25-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:46:13-50
+25-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:46:19-48
+26        </intent>
+27        <intent>
+27-->[:file_picker] /joxe/xampp/htdocs/remote.app/scontrol/build/file_picker/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:8:9-12:18
+28            <action android:name="android.intent.action.GET_CONTENT" />
+28-->[:file_picker] /joxe/xampp/htdocs/remote.app/scontrol/build/file_picker/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:9:13-72
+28-->[:file_picker] /joxe/xampp/htdocs/remote.app/scontrol/build/file_picker/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:9:21-69
+29
+30            <data android:mimeType="*/*" />
+30-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:46:13-50
+30-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:46:19-48
+31        </intent>
+32    </queries>
+33
+34    <permission
+34-->[androidx.core:core:1.15.0] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/0a69220afb472c7b014f0ae28962f998/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+35        android:name="com.example.phone_pc_controller_fixed.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+35-->[androidx.core:core:1.15.0] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/0a69220afb472c7b014f0ae28962f998/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+36        android:protectionLevel="signature" />
+36-->[androidx.core:core:1.15.0] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/0a69220afb472c7b014f0ae28962f998/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+37
+38    <uses-permission android:name="com.example.phone_pc_controller_fixed.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+38-->[androidx.core:core:1.15.0] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/0a69220afb472c7b014f0ae28962f998/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+38-->[androidx.core:core:1.15.0] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/0a69220afb472c7b014f0ae28962f998/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+39
+40    <application
+41        android:name="android.app.Application"
+41-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:8:9-42
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.15.0] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/0a69220afb472c7b014f0ae28962f998/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+43        android:extractNativeLibs="true"
+44        android:icon="@mipmap/ic_launcher"
+44-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:9:9-43
+45        android:label="scontrol" >
+45-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:7:9-33
+46        <activity
+46-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:10:9-31:20
+47            android:name="com.example.scontrol.MainActivity"
+47-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:11:13-41
+48            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+48-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:16:13-163
+49            android:exported="true"
+49-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:12:13-36
+50            android:hardwareAccelerated="true"
+50-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:17:13-47
+51            android:launchMode="singleTop"
+51-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:13:13-43
+52            android:taskAffinity=""
+52-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:14:13-36
+53            android:theme="@style/LaunchTheme"
+53-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:15:13-47
+54            android:windowSoftInputMode="adjustResize" >
+54-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:18:13-55
+55
+56            <!--
+57                 Specifies an Android theme to apply to this Activity as soon as
+58                 the Android process has started. This theme is visible to the user
+59                 while the Flutter UI initializes. After that, this theme continues
+60                 to determine the Window background behind the Flutter UI.
+61            -->
+62            <meta-data
+62-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:23:13-26:17
+63                android:name="io.flutter.embedding.android.NormalTheme"
+63-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:24:15-70
+64                android:resource="@style/NormalTheme" />
+64-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:25:15-52
+65
+66            <intent-filter>
+66-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:27:13-30:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:28:17-68
+67-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:28:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:29:17-76
+69-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:29:27-74
+70            </intent-filter>
+71        </activity>
+72        <!--
+73             Don't delete the meta-data below.
+74             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+75        -->
+76        <meta-data
+76-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:34:9-36:33
+77            android:name="flutterEmbedding"
+77-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:35:13-44
+78            android:value="2" />
+78-->/joxe/xampp/htdocs/remote.app/scontrol/android/app/src/main/AndroidManifest.xml:36:13-30
+79
+80        <provider
+80-->[androidx.lifecycle:lifecycle-process:2.8.7] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/9a58102024d2bac5d1ee1e1203812678/transformed/jetified-lifecycle-process-2.8.7/AndroidManifest.xml:24:9-32:20
+81            android:name="androidx.startup.InitializationProvider"
+81-->[androidx.lifecycle:lifecycle-process:2.8.7] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/9a58102024d2bac5d1ee1e1203812678/transformed/jetified-lifecycle-process-2.8.7/AndroidManifest.xml:25:13-67
+82            android:authorities="com.example.phone_pc_controller_fixed.androidx-startup"
+82-->[androidx.lifecycle:lifecycle-process:2.8.7] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/9a58102024d2bac5d1ee1e1203812678/transformed/jetified-lifecycle-process-2.8.7/AndroidManifest.xml:26:13-68
+83            android:exported="false" >
+83-->[androidx.lifecycle:lifecycle-process:2.8.7] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/9a58102024d2bac5d1ee1e1203812678/transformed/jetified-lifecycle-process-2.8.7/AndroidManifest.xml:27:13-37
+84            <meta-data
+84-->[androidx.lifecycle:lifecycle-process:2.8.7] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/9a58102024d2bac5d1ee1e1203812678/transformed/jetified-lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+85-->[androidx.lifecycle:lifecycle-process:2.8.7] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/9a58102024d2bac5d1ee1e1203812678/transformed/jetified-lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
+86                android:value="androidx.startup" />
+86-->[androidx.lifecycle:lifecycle-process:2.8.7] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/9a58102024d2bac5d1ee1e1203812678/transformed/jetified-lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+89                android:value="androidx.startup" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+90        </provider>
+91
+92        <uses-library
+92-->[androidx.window:window:1.2.0] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5093ab42d2307deb2d7ac0b7f5718c38/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+93            android:name="androidx.window.extensions"
+93-->[androidx.window:window:1.2.0] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5093ab42d2307deb2d7ac0b7f5718c38/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+94            android:required="false" />
+94-->[androidx.window:window:1.2.0] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5093ab42d2307deb2d7ac0b7f5718c38/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+95        <uses-library
+95-->[androidx.window:window:1.2.0] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5093ab42d2307deb2d7ac0b7f5718c38/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+96            android:name="androidx.window.sidecar"
+96-->[androidx.window:window:1.2.0] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5093ab42d2307deb2d7ac0b7f5718c38/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+97            android:required="false" />
+97-->[androidx.window:window:1.2.0] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5093ab42d2307deb2d7ac0b7f5718c38/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+98
+99        <receiver
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+100            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+101            android:directBootAware="false"
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+102            android:enabled="true"
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+103            android:exported="true"
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+104            android:permission="android.permission.DUMP" >
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+105            <intent-filter>
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+106                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+107            </intent-filter>
+108            <intent-filter>
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+109                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+110            </intent-filter>
+111            <intent-filter>
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+112                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+113            </intent-filter>
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+115                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] /joxe/programs/gradle/.cache/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+116            </intent-filter>
+117        </receiver>
+118    </application>
+119
+120</manifest>
